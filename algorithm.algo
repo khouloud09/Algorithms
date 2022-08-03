@@ -1,0 +1,30 @@
+ALGORITHM sentenceword
+VAR
+i,j,length,nvowels: INTEGER := 0;
+nwords: INTEGER := 1;
+vowels:string:= ["AaEeIiUuOoYy"];
+sentence:string;
+space:string := " ";
+
+BEGIN
+read(sentence)
+while (sentence[i] != ".")
+    {
+while ( j<vowels.length)
+    {
+        if(sentence[i] == vowels[j])
+        {
+            nvowels++;
+        }
+        j++;
+    }
+        if(sentence[i] == " ")
+         {
+            nword++;
+        }
+        length++;
+        i++;
+   
+    }
+Write("Length is " length ,", Number of words is " nwords, ", Number of vowels is " nvowels )
+END
